@@ -8,24 +8,26 @@ body {
 	
 }
 
-.container {
+header {
 	
-	margin:     0 auto;
 	background: #23424A;
 	color:      white;
 	padding:    50px 10%;
 }
 
-.container2 {
+header, main {
 	margin: 0 auto;
-	width:  80%;
 }
 
-.intro-content {
-	width:     50%;
+main {
+	width: 80%;
+}
+
+section {
 	max-width: 750px;
 }
 
-.more-content {
+header > * {
+	width:     50%;
 	max-width: 750px;
 }
