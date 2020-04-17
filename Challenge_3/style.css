@@ -9,15 +9,19 @@ body {
 
 header {
 	margin:           0 auto;
-	padding:          2em;
+	padding:          2%;
 	background-color: darkslategray;
 	color:            white;
 }
 
 .header-box {
-	width:     60%;
-	max-width: 750px;
-	padding:   5em 4em 5em 0;
+	width:     80%;
+	max-width: 900px;
+	padding:   1% 0 1% 10%;
+}
+
+.header-box > hr {
+	height: 1%;
 }
 
 
@@ -41,6 +45,10 @@ h1 {
 
 .btn:hover, .btn:focus {
 	background-color: darkturquoise;
+}
+
+main {
+	margin: 0 10%;
 }
 
 section {
