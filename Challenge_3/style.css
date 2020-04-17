@@ -46,4 +46,18 @@ p {
 	body {
 		font-size: 0.9rem;
 	}
+	
+	.header-box {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	body {
+		font-size: 0.9rem;
+	}
+	
+	.header-box {
+		width: 90%;
+	}
 }
