@@ -1,0 +1,121 @@
+/* 
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+
+   */
+
+
+*, *::before, *::after {
+    --hero-background: #23424A;
+    --row1-title: #87629A;
+    --row2-background: #136C72;
+    --body-foreground: #3A3A3A;
+    --btn-background: #38CFD9;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    color: var(--body-foreground);
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.25rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    /* display: flex => flex container */
+    display: flex;
+
+    /* can't use yet */
+    /* gap: 100px; */
+    margin: 0 auto;
+    
+    padding: 100px 0;
+   
+}
+
+.col {
+    /* these are now flex items */
+    width: 100%;
+}
+
+
+.col+.col {
+    margin-left: 30px;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: var(--hero-background);
+    color: #FFF;
+}
+
+.hero__text {
+    width: 60%;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.three-col {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.three-col h2 {
+    color: var(--row1-title);
+}
+
+.two-col {
+    text-align: center;
+    padding: 3em 0;
+    background-color: var(--row2-background);
+    color: white;
+}
+
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: var(--hero-background);
+    font-weight: 900;
+    background-color: var(--btn-background);
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
